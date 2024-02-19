@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta name="description" content="A working resume for Jacob Houston">
         <meta name="author" content="Jacob Houston">
         <title>Jacob Houston</title>
@@ -8,12 +9,22 @@
             body {
                 font-family: Georgia, serif;
                 background-color: #9BCFED;
+                background-image: url(big-morph-ball.png);
+                /*The morph ball design is a free design I found on Google images*/
+                background-position: center;
+                background-repeat: repeat-y;
+                background-position: top;
+                background-attachment: fixed;
             }
             h1 {
                 text-align: center;
                 font-size: 3em;
                 letter-spacing: .1em;
                 text-shadow: .1em .1em .2em #749BB2;
+            }
+            h2::first-letter {
+                color: #070B49;
+                font-size: 1.2em;
             }
             h2 {
                 font-size: 2em;
@@ -26,12 +37,19 @@
             p {
                 font-family: Arial, serif;
             }
+            ul {
+                list-style-type: square;
+            }
             li {
                 font-family: Arial, serif;
+                list-style-image: url(morph-ball.png); 
             }
             a {
-                color: #3A4E59;
+                color: #2B2F64;
                 text-decoration: none;
+            }
+            .places {
+                color: #2B2F64;
             }
         </style>
     </head>
@@ -43,31 +61,31 @@
                 jacob.houston2002@gmail.com</b></p>
 
         <h2>Education</h2>
-            <b>James Madison University, </b>Harrisonburg, VA - <i>Bachelor's Degree</i>
+            <b class="places">James Madison University, </b>Harrisonburg, VA - <i>Bachelor's Degree</i>
             <p><i>August 2020 - May 2025</i><br>
                 I'm currently enrolled in James Madison as a Media Art and Design
                 major with a GPA of 2.4. I began my college career as a 
                 computer science major, but two years in I realized it wasn't 
                 for me. My grades have been steadily improving since.</p>
-            <b>Grassfield High School, </b>Chesapeake, VA - <i>High School Diploma</i>
+            <b class="places">Grassfield High School, </b>Chesapeake, VA - <i>High School Diploma</i>
             <p><i>September 2016 - June 2020</i><br>
                 I graduated from Grassfield High School with a GPA of 3.7.</p>
 
         <h2>Work Experience</h2>
             <p>I currently do not have any experience working a job in my field of study; however, I have extensive knowledge in working on projects, both personal 
             and school-related. I'm hoping to get some experience in my field soon.</p>
-            <b><a href="https://jmu.campusdish.com/LocationsAndMenus/FestivalFoodCourt" target="_blank">
+            <b class="places"><a href="https://jmu.campusdish.com/LocationsAndMenus/FestivalFoodCourt" target="_blank">
                 Festival Conference Center,</a></b> Harrisonburg, VA - <i>
                 Cashier and Food Server</i>
             <p><i>August 2023 - Present</i><br>
                 I worked mainly as a cashier and occasionally in various food services,
                 where I mastered my control over a digital cash register, as well as learning
                 how to be approachable and welcoming with customers, and closing a food court.</p>
-            <b>Rue 21, </b>Norfolk, VA - <i>Store Associate</i>
+            <b class="places">Rue 21, </b>Norfolk, VA - <i>Store Associate</i>
             <p><i>June 2023 - August 2023</i><br>
                 I worked at the Rue 21 in the MacArthur mall and learned about procuring online 
                 orders, working with clothes, and customer service.</p>
-            <b>Subway, </b>Chesapeake, VA - <i>Sandwich Artist</i>
+            <b class="places">Subway, </b>Chesapeake, VA - <i>Sandwich Artist</i>
             <p><i>May 2022 - August 2022</i><br>
                 I worked in food service for the first time, and gained experience working
                 in the food service industry, as well as how to close a small shop.</p>
